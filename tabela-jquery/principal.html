@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação de Table com JQuery 3.1.0 e Estilos Materialize</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+   <div class="container">
+		<h1 class="center">Mnipulação de Table</h1>
+        <p class="frase">Uso da biblioteca  com JQuery 3.1.0 e Estilos com Materialize</p>
+		<p class="frase">Cadastro de Itens</p>
+		<div class="row">
+			<div class="input-field col s6">
+				<input placeholder="Digite o nome do produto" id="nome-produto" name="nome-produto" type="text" class="validate">
+				<label class="active" for="nome-produto" data-error="Preencha o campo Nome">Produto</label>
+			</div>
+			<div class="input-field col s3">
+				<input placeholder="Digite a quantidade do produto" id="quantidade" type="number" class="validate">
+				<label class="active" for="quantidade" data-error="Preencha o campo Numero corretamente">Quantidade</label>
+			</div>
+			<div class="botoes center">
+				<a id="botao-adicionar" class="btn-floating btn-large waves-effect waves-light green">
+					<i class="material-icons">add</i>
+				</a>
+			</div>				
+		</div>	
+		<section class="itens">
+			<h3 class="center">Produtos</h3>
+			<table class="centered bordered">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Quatidade</th>
+						<th>Remover</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/produto.js"></script>
+</body>
+</html>
